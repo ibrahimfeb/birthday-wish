@@ -4,6 +4,7 @@ const HeaderClip = () => {
   return (
     <div className="videoBG">
       <video src={heroSection} autoPlay loop muted />
+      <video src={videoBG} autoPlay loop muted />
     </div>
   );
 };
