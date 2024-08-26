@@ -3,7 +3,7 @@ import { coupleShape, img1, mount2, section_shape } from "../assets";
 const LovelyCouple = () => {
   return (
     <>
-      <section id="couple" className="couple_area pt-[200px] pb-130">
+      <section id="couple" className="couple_area pt-[20px] pb-130">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-6">
@@ -32,7 +32,7 @@ const LovelyCouple = () => {
                     standard dummy text ever since   the 1500s, when an unknown
                     printer took a galley of type and scrambled it to make a
                     type specimen book. It has survived not only five centuries.
-                  </p>{" "}
+                  </p>
                    
                 </div>
               </div>
@@ -59,7 +59,7 @@ const LovelyCouple = () => {
                     standard dummy text ever since   the 1500s, when an unknown
                     printer took a galley of type and scrambled it to make a
                     type specimen book. It has survived not only five centuries.
-                  </p>{" "}
+                  </p>
                    
                 </div>
               </div>
