@@ -2,7 +2,7 @@ import Home from "../pages/Home";
 
 const App = () => {
   return (
-    <div className="bg-gradient-to-b from-custom-500 to-custom-600 via-mint-200 h-full w-full">
+    <div className=" h-full w-full">
       <Home />
     </div>
   );
