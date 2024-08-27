@@ -16,7 +16,7 @@ const LovelyCouple = () => {
           <div className="row">
             <div className="col-md-6">
               <div
-                className="single_couple mt-30 wow fadeInUpBig"
+                className="single_couple mt-10 wow fadeInUpBig"
                 data-wow-duration="1.3s"
                 data-wow-delay="0.2s"
               >
@@ -39,7 +39,7 @@ const LovelyCouple = () => {
             </div>
             <div className="col-md-6">
               <div
-                className="single_couple mt-30 wow fadeInUpBig"
+                className="single_couple mt-10 wow fadeInUpBig"
                 data-wow-duration="1.3s"
                 data-wow-delay="0.6s"
               >
