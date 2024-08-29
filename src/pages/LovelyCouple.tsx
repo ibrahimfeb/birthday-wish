@@ -314,11 +314,9 @@ const LovelyCouple = () => {
                     <h3 className="title">Michael <span>&</span> Jessica</h3>
                 </div>
                 <ul className="footer_menu">
-                    <li>Care</li>
                     <li>Love</li>
                     <li>Joy</li>
                     <li>Happiness</li>
-                    <li>Smile</li>
                     <li>❤️</li>
                 </ul>
             </div> 
