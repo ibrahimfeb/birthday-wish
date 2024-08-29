@@ -212,54 +212,122 @@ const LovelyCouple = () => {
 
       <section id="event" className="event_area pt-80 pb-130">
         <div className="container">
-            <div className="row justify-content-center">
-                <div className="col-lg-6">
-                    <div className="section_title text-center pb-30 flex flex-col items-center justify-center">
-                        <h3 className="title">Birthday Events</h3>
-                        <img src={section_shape} alt="Shape" className="self-center"/>
-                    </div> 
-                </div>
+          <div className="row justify-content-center">
+            <div className="col-lg-6">
+              <div className="section_title text-center pb-30 flex flex-col items-center justify-center">
+                <h3 className="title">Birthday Events</h3>
+                <img src={section_shape} alt="Shape" className="self-center" />
+              </div>
             </div>
-            <div className="row justify-content-center">
-                <div className="col-lg-4 col-md-7">
-                    <div className="single_event mt-30 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.2s">
-                        <div className="event_image">
-                            <img src={loveOne} alt="event"/>
-                        </div>
-                        <div className="event_content">
-                            <span className="date">02 Feb 2023</span>
-                            <h3 className="event_title"><p>Photography</p></h3>
-                            <p>Typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when unknown printer took a galley</p>
-                        </div>
-                    </div> 
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-lg-4 col-md-7">
+              <div
+                className="single_event mt-30 wow fadeIn"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.2s"
+              >
+                <div className="event_image">
+                  <img src={loveOne} alt="event" />
                 </div>
-                <div className="col-lg-4 col-md-7">
-                    <div className="single_event mt-30 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                        <div className="event_image">
-                            <img src={loveThree} alt="event"/>
-                        </div>
-                        <div className="event_content">
-                            <span className="date">05 Feb 2023</span>
-                            <h3 className="event_title"><p >Dancing</p></h3>
-                            <p>Typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when unknown printer took a galley</p>
-                        </div>
-                    </div>
+                <div className="event_content">
+                  <span className="date">02 Feb 2023</span>
+                  <h3 className="event_title">
+                    <p>Photography</p>
+                  </h3>
+                  <p>
+                    Typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when unknown
+                    printer took a galley
+                  </p>
                 </div>
-                <div className="col-lg-4 col-md-7">
-                    <div className="single_event mt-30 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.8s">
-                        <div className="event_image">
-                            <img src={loveThree} alt="event"/>
-                        </div>
-                        <div className="event_content">
-                            <span className="date">07 Feb 2023</span>
-                            <h3 className="event_title"><p >Movie Plan</p></h3>
-                            <p>Typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when unknown printer took a galley</p>
-                        </div>
-                    </div> 
-                </div>
+              </div>
             </div>
+            <div className="col-lg-4 col-md-7">
+              <div
+                className="single_event mt-30 wow fadeIn"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.5s"
+              >
+                <div className="event_image">
+                  <img src={loveThree} alt="event" />
+                </div>
+                <div className="event_content">
+                  <span className="date">05 Feb 2023</span>
+                  <h3 className="event_title">
+                    <p>Dancing</p>
+                  </h3>
+                  <p>
+                    Typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when unknown
+                    printer took a galley
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-7">
+              <div
+                className="single_event mt-30 wow fadeIn"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.8s"
+              >
+                <div className="event_image">
+                  <img src={loveThree} alt="event" />
+                </div>
+                <div className="event_content">
+                  <span className="date">07 Feb 2023</span>
+                  <h3 className="event_title">
+                    <p>Movie Plan</p>
+                  </h3>
+                  <p>
+                    Typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when unknown
+                    printer took a galley
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+
+      <section id="gallery" className="gallery_area pt-80">
+        <div className="container">
+          <div className="text-center">
+            <h1>Have a bright future</h1>
+            <p>
+            Wishing you a lifetime of happiness and joy. I'm so grateful to have you in my life.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer" className="footer_area mt-80">
+        <div className="footer_shape_1">
+            <img src={shapeOne} alt="shape"/>
+        </div>
+        
+        <div className="container">
+            <div className="footer_widget pt-80 pb-80 text-center">
+                
+                <div className="footer_title">
+                    <h3 className="title">Michael <span>&</span> Jessica</h3>
+                </div>
+                <ul className="footer_menu">
+                    <li>Care</li>
+                    <li>Love</li>
+                    <li>Joy</li>
+                    <li>Happiness</li>
+                    <li>Smile</li>
+                    <li>❤️</li>
+                </ul>
+            </div> 
+            <div className="footer_copyright text-center">
+                <p>Designed and Developed by <p  style={{color: "#D59A57"}} rel="nofollow">M Ibrahim</p></p>
+            </div>
+        </div> 
+    </footer>
+
     </>
   );
 };
