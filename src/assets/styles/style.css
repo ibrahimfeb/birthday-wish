@@ -1270,7 +1270,7 @@ p {
   .single_event .event_content .date {
     font-size: 16px;
     color: #747E88; }
-  .single_event .event_content .event_title a {
+  .single_event .event_content .event_title p {
     font-size: 30px;
     color: #38424D;
     margin-top: 20px;
@@ -1279,7 +1279,7 @@ p {
     -ms-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s; }
-    .single_event .event_content .event_title a:hover {
+    .single_event .event_content .event_title p:hover {
       color: #D59A57; }
   .single_event .event_content p {
     margin-top: 15px; }

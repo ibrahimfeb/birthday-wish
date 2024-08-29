@@ -228,7 +228,7 @@ const LovelyCouple = () => {
                         </div>
                         <div className="event_content">
                             <span className="date">02 Feb 2023</span>
-                            <h3 className="event_title"><p>Bride Shower</p></h3>
+                            <h3 className="event_title"><p>Photography</p></h3>
                             <p>Typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when unknown printer took a galley</p>
                         </div>
                     </div> 
@@ -240,7 +240,7 @@ const LovelyCouple = () => {
                         </div>
                         <div className="event_content">
                             <span className="date">05 Feb 2023</span>
-                            <h3 className="event_title"><p >Wedding Reception</p></h3>
+                            <h3 className="event_title"><p >Dancing</p></h3>
                             <p>Typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when unknown printer took a galley</p>
                         </div>
                     </div>
@@ -252,7 +252,7 @@ const LovelyCouple = () => {
                         </div>
                         <div className="event_content">
                             <span className="date">07 Feb 2023</span>
-                            <h3 className="event_title"><p >Bachelor Party</p></h3>
+                            <h3 className="event_title"><p >Movie Plan</p></h3>
                             <p>Typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when unknown printer took a galley</p>
                         </div>
                     </div> 
