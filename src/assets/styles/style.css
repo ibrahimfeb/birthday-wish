@@ -159,7 +159,7 @@ p {
 /*===== All Section Title Style =====*/
 .section_title .title {
   font-size: 45px;
-  color: #D59A57; }
+  color: #3c3333; }
   @media (max-width: 767px) {
     .section_title .title {
       font-size: 34px; } }
@@ -906,10 +906,11 @@ p {
     transform: translateX(-50%);
     width: 70px;
     z-index: -1;
-    opacity: 0.26; }
+    opacity: 0.26;
+   }
   .single_couple .couple_content .couple_name {
     font-size: 40px;
-    color: #D59A57; }
+    color: #3c3333; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .single_couple .couple_content .couple_name {
         font-size: 30px; } }
@@ -1095,7 +1096,9 @@ p {
       margin-top: 30px; } }
   .single_love .love_content .love_title {
     font-size: 30px;
-    color: #D59A57; }
+    color: #3c3333;
+    /* color: #D59A57; */
+   }
   .single_love .love_content p {
     margin-top: 30px;
     font-weight: 300; }

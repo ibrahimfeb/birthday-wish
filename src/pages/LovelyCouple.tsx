@@ -81,7 +81,7 @@ const LovelyCouple = () => {
 
         <div className="container items-center  ">
           <div className="text-center">
-            <h1>Happy Birthday!</h1>
+            <h1 className="pb-[5px]">Happy Birthday!</h1>
             <p>
               Wishing you a day filled with joy, laughter, and love. May all
               your wishes come true. Happy Birthday!
@@ -122,7 +122,7 @@ const LovelyCouple = () => {
                 </p>
               </div>
               <div className="love_date">
-                <p>7 May 21</p>
+                <p></p>
                 {/* <p>
                   <i className="lni lni-heart-filled"></i> 7 May 21
                 </p> */}
@@ -153,7 +153,7 @@ const LovelyCouple = () => {
                 </p>
               </div>
               <div className="love_date">
-                <p>15 Jan 22</p>
+                <p></p>
                 {/* <p>
                   <i className="lni lni-heart-filled"></i> 15 Jan 22
                 </p> */}
@@ -184,7 +184,7 @@ const LovelyCouple = () => {
                 </p>
               </div>
               <div className="love_date">
-                <p>25 Jul 22</p>
+                <p></p>
               </div>
               <div
                 className="love_image order-md-first wow fadeInRightBig"
@@ -201,7 +201,7 @@ const LovelyCouple = () => {
       <section id="gallery" className="gallery_area pt-80">
         <div className="container">
           <div className="text-center">
-            <h1>Always be Happy</h1>
+            <h1 className="pb-[5px]">Always be Happy</h1>
             <p>
               You deserve the best day ever. I hope it's filled with love,
               laughter, and everything you desire.
@@ -294,7 +294,7 @@ const LovelyCouple = () => {
       <section id="gallery" className="gallery_area pt-80">
         <div className="container">
           <div className="text-center">
-            <h1>Have a bright future</h1>
+            <h1 className="pb-[5px]">Have a bright future</h1>
             <p>
             Wishing you a lifetime of happiness and joy. I'm so grateful to have you in my life.
             </p>
