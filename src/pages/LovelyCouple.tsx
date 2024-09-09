@@ -29,6 +29,19 @@ const LovelyCouple = () => {
   }, []);
   return (
     <>
+      <section id="gallery" className="gallery_area pt-80">
+        <div className="container mx-auto">
+          <div className="text-center">
+            <div className="w-full aspect-ratio-16:9 flex justify-center">
+              <audio controls autoPlay loop>
+                <source src={audiosong} type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section
         id="coming_soon"
         className="coming_soon_area py-16 "
@@ -382,18 +395,6 @@ const LovelyCouple = () => {
           </div>
         </div>
       </section>
-      <section id="gallery" className="gallery_area pt-80">
-        <div className="container mx-auto">
-          <div className="text-center">
-            <div className="w-full aspect-ratio-16:9 flex justify-center">
-              <audio  controls autoPlay loop>
-                <source src={audiosong} type="audio/mpeg" />
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <footer id="footer" className="footer_area mt-80">
         <div className="footer_shape_1">
@@ -404,7 +405,7 @@ const LovelyCouple = () => {
           <div className="footer_widget pt-80 pb-80 text-center">
             <div className="footer_title">
               <h3 className="title" style={{ color: "#c43451" }}>
-                Michael  ❤️ Jessica
+                Michael ❤️ Jessica
               </h3>
             </div>
             <ul className="footer_menu">
