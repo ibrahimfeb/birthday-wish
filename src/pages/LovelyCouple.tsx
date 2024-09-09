@@ -35,15 +35,15 @@ const LovelyCouple = () => {
                 </div>
                 <div className="couple_content text-center">
                   <img className="shape" src={coupleShape} alt="shape" />
-                  <h4 className="couple_name">Michael   Smith</h4>
+                  <h4 className="couple_name">Michael  &nbsp; Smith</h4>
                   <p>
                     Hi I am Michael Smith, dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since   the 1500s, when an unknown
+                    standard dummy text ever since &nbsp; the 1500s, when an unknown
                     printer took a galley of type and scrambled it to make a
                     type specimen book. It has survived not only five centuries.
                   </p>
-                   
+                  &nbsp;
                 </div>
               </div>
             </div>
@@ -58,15 +58,15 @@ const LovelyCouple = () => {
                 </div>
                 <div className="couple_content text-center">
                   <img className="shape" src={coupleShape} alt="shape" />
-                  <h4 className="couple_name">Jessica   Jones</h4>
+                  <h4 className="couple_name">Jessica &nbsp; Jones</h4>
                   <p>
                     Hi I am Jessica Jones, dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since   the 1500s, when an unknown
+                    standard dummy text ever since &nbsp; the 1500s, when an unknown
                     printer took a galley of type and scrambled it to make a
                     type specimen book. It has survived not only five centuries.
                   </p>
-                   
+                  &nbsp;
                 </div>
               </div>
             </div>
