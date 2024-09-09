@@ -1,16 +1,32 @@
 import {
   coupleShape,
+  eight8,
+  five5,
   img1,
-  loveOne,
-  loveThree,
-  loveTwo,
   mount2,
-  section_shape,
+  one1,
+  seven7,
   shapeOne,
   shapeTwo,
+  six6,
+  ten10,
+  three3,
 } from "../assets";
+import lastclip from "../assets/clips/lastclip.mp4";
+import audiosong from "../assets/clips/audiosong.m4a";
+import { useEffect, useRef } from "react";
 
 const LovelyCouple = () => {
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (audio) {
+      audio.play().catch((error) => {
+        console.error("Audio playback failed:", error);
+      });
+    }
+  }, []);
   return (
     <>
       <section
@@ -42,7 +58,7 @@ const LovelyCouple = () => {
         </div>
       </section>
 
-      <section id="couple" className="couple_area pt-[20px] pb-130">
+      <section id="couple" className="couple_area pt-[20px] pb-0">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-6">
@@ -164,7 +180,7 @@ const LovelyCouple = () => {
                 data-wow-duration="1.3s"
                 data-wow-delay="0.4s"
               >
-                <img src={loveOne} alt="love" />
+                <img src={one1} alt="love" />
               </div>
             </div>
 
@@ -197,7 +213,7 @@ const LovelyCouple = () => {
                 data-wow-duration="1.3s"
                 data-wow-delay="0.4s"
               >
-                <img src={loveTwo} alt="love" />
+                <img src={three3} alt="love" />
               </div>
             </div>
 
@@ -229,32 +245,83 @@ const LovelyCouple = () => {
                 data-wow-duration="1.3s"
                 data-wow-delay="0.4s"
               >
-                <img src={loveThree} alt="love" />
+                <img src={ten10} alt="love" />
+              </div>
+            </div>
+
+            <div className="single_love d-flex flex-wrap align-items-center">
+              <div
+                className="love_content text-lg-right wow fadeInRightBig"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.4s"
+              >
+                <h3 className="love_title">As we celebrate you today</h3>
+                <p>
+                  let’s also take a moment to reflect on the beautiful journey
+                  we have shared together. The memories we have created, the
+                  challenges we have overcome, and the love that has blossomed
+                  between us are treasures that I hold dear. I look forward to
+                  making many more memories with you in the years to come.
+                </p>
+              </div>
+              <div className="love_date">
+                <p></p>
+                {/* <p>
+                  <i className="lni lni-heart-filled"></i> 15 Jan 22
+                </p> */}
+              </div>
+              <div
+                className="love_image wow fadeInLeftBig"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.4s"
+              >
+                <img src={eight8} alt="love" />
+              </div>
+            </div>
+
+            <div className="single_love d-flex flex-wrap align-items-center">
+              <div
+                className="love_content order-md-last wow fadeInLeftBig"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.4s"
+              >
+                <h3 className="love_title">Thank you for being you</h3>
+                <p>
+                  for being the incredible woman that you are. Thank you for
+                  your love, your patience, and your unwavering support. I am so
+                  proud to call you my wife, and I promise to cherish you every
+                  day of my life.
+                </p>
+              </div>
+              <div className="love_date">
+                <p></p>
+              </div>
+              <div
+                className="love_image order-md-first wow fadeInRightBig"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.4s"
+              >
+                <img src={seven7} alt="love" />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="gallery" className="gallery_area pt-80">
+      <section id="gallery" className="gallery_area pt-0">
         <div className="container">
           <div className="text-center">
             <h1 className="pb-[5px]"></h1>
-            {/* <p style={{ color: "#D57282" }}>
-              You deserve the best day ever. I hope it's filled with love,
-              laughter, and everything you desire.
-            </p> */}
           </div>
         </div>
       </section>
 
-      <section id="event" className="event_area pt-80 pb-130">
+      <section id="event" className="event_area pt-80 pb-0">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-6">
               <div className="section_title text-center pb-30 flex flex-col items-center justify-center">
                 <h3 className="title">Our Moments</h3>
-                <img src={section_shape} alt="Shape" className="self-center" />
               </div>
             </div>
           </div>
@@ -266,14 +333,11 @@ const LovelyCouple = () => {
                 data-wow-delay="0.2s"
               >
                 <div className="event_image">
-                  <img src={loveOne} alt="event" />
+                  <img src={six6} alt="event" style={{}} />
                 </div>
                 <div className="event_content">
-                  <span className="date">02 Feb 2023</span>
-                  <h3 className="event_title">
-                    <p>First We Met at Gurdwara</p>
-                  </h3>
-                  {/* s */}
+                  <span className="date">14 feb at 08:00</span>
+                  <p>First We Met at Gurdwara</p>
                 </div>
               </div>
             </div>
@@ -284,40 +348,14 @@ const LovelyCouple = () => {
                 data-wow-delay="0.5s"
               >
                 <div className="event_image">
-                  <img src={loveThree} alt="event" />
+                  <img src={five5} alt="event" />
                 </div>
                 <div className="event_content">
                   <span className="date">05 Feb 2023</span>
-                  <h3 className="event_title">
+                  {/* <h3 className="event_title">
                     <p>Monal Restaurent Lunch</p>
-                  </h3>
-                  {/* <p>
-                    Typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when unknown
-                    printer took a galley
-                  </p> */}
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-7">
-              <div
-                className="single_event mt-30 wow fadeIn"
-                data-wow-duration="1.3s"
-                data-wow-delay="0.8s"
-              >
-                <div className="event_image">
-                  <img src={loveThree} alt="event" />
-                </div>
-                <div className="event_content">
-                  <span className="date">07 Feb 2023</span>
-                  <h3 className="event_title">
-                    <p>Movie Plan</p>
-                  </h3>
-                  {/* <p>
-                    Typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when unknown
-                    printer took a galley
-                  </p> */}
+                  </h3> */}
+                  <p>Monal Restaurent Lunch</p>
                 </div>
               </div>
             </div>
@@ -329,10 +367,30 @@ const LovelyCouple = () => {
         <div className="container">
           <div className="text-center">
             <h1 className="pb-[5px]">Have a bright future</h1>
-            <p>
+            <p className="text-[#D57282] mb-[20px]">
               Wishing you a lifetime of happiness and joy. I'm so grateful to
               have you in my life.
             </p>
+            <div className="w-full aspect-ratio-16:9">
+              <iframe
+                src={lastclip}
+                title="Video Clip"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                className="w-full h-full"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gallery" className="gallery_area pt-80">
+        <div className="container mx-auto">
+          <div className="text-center">
+            <div className="w-full aspect-ratio-16:9 flex justify-center">
+              <audio  controls autoPlay loop>
+                <source src={audiosong} type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
           </div>
         </div>
       </section>
@@ -346,7 +404,7 @@ const LovelyCouple = () => {
           <div className="footer_widget pt-80 pb-80 text-center">
             <div className="footer_title">
               <h3 className="title" style={{ color: "#c43451" }}>
-                Michael Jessica
+                Michael  ❤️ Jessica
               </h3>
             </div>
             <ul className="footer_menu">
