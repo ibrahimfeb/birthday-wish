@@ -1,9 +1,6 @@
 import {
-  coupleShape,
   eight8,
   five5,
-  img1,
-  mount2,
   one1,
   seven7,
   shapeOne,
@@ -13,7 +10,7 @@ import {
   three3,
 } from "../assets";
 import lastclip from "../assets/clips/lastclip.mp4";
-import audiosong from "../assets/clips/audiosong.m4a";
+import wishSong from "../assets/clips/wishSong.mp4";
 import { useEffect, useRef } from "react";
 
 const LovelyCouple = () => {
@@ -29,14 +26,11 @@ const LovelyCouple = () => {
   }, []);
   return (
     <>
-      <section id="gallery" className="gallery_area pt-80">
-        <div className="container mx-auto">
+      <section id="gallery" className="gallery_area pt-0 h-[1vh] hidden">
+        <div className="container">
           <div className="text-center">
-            <div className="w-full aspect-ratio-16:9 flex justify-center">
-              <audio controls autoPlay loop>
-                <source src={audiosong} type="audio/mpeg" />
-                Your browser does not support the audio element.
-              </audio>
+            <div className="w-full  flex justify-center">
+              <video src={wishSong} autoPlay loop />
             </div>
           </div>
         </div>
@@ -71,12 +65,11 @@ const LovelyCouple = () => {
         </div>
       </section>
 
-      <section id="couple" className="couple_area pt-[20px] pb-0">
+      {/* <section id="couple" className="couple_area pt-[20px] pb-0">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-6">
               <div className="section_title text-center pb-30 flex flex-col items-center justify-center">
-                {/* <h3 className="title">Lovely Couple</h3> */}
               </div>
             </div>
           </div>
@@ -131,7 +124,7 @@ const LovelyCouple = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* 
       <section id="coming_soon" className="coming_soon_area py-16 ">
         <div className="coming_soon_shape_1">
@@ -189,7 +182,7 @@ const LovelyCouple = () => {
                 </p> */}
               </div>
               <div
-                className="love_image order-md-first wow fadeInRightBig"
+                className="love_image order-md-first wow fadeInRightBig border-2 border-[#c43451] p-3 rounded-[10px]"
                 data-wow-duration="1.3s"
                 data-wow-delay="0.4s"
               >
@@ -222,7 +215,7 @@ const LovelyCouple = () => {
                 </p> */}
               </div>
               <div
-                className="love_image wow fadeInLeftBig"
+                className="love_image wow fadeInLeftBig border-2 border-[#c43451] p-3 rounded-[10px]"
                 data-wow-duration="1.3s"
                 data-wow-delay="0.4s"
               >
@@ -254,7 +247,7 @@ const LovelyCouple = () => {
                 <p></p>
               </div>
               <div
-                className="love_image order-md-first wow fadeInRightBig"
+                className="love_image order-md-first wow fadeInRightBig border-2 border-[#c43451] p-3 rounded-[10px]"
                 data-wow-duration="1.3s"
                 data-wow-delay="0.4s"
               >
@@ -284,7 +277,7 @@ const LovelyCouple = () => {
                 </p> */}
               </div>
               <div
-                className="love_image wow fadeInLeftBig"
+                className="love_image wow fadeInLeftBig border-2 border-[#c43451] p-3 rounded-[10px]"
                 data-wow-duration="1.3s"
                 data-wow-delay="0.4s"
               >
@@ -310,7 +303,7 @@ const LovelyCouple = () => {
                 <p></p>
               </div>
               <div
-                className="love_image order-md-first wow fadeInRightBig"
+                className="love_image order-md-first wow fadeInRightBig border-2 border-[#c43451] p-3 rounded-[10px]"
                 data-wow-duration="1.3s"
                 data-wow-delay="0.4s"
               >
@@ -334,7 +327,7 @@ const LovelyCouple = () => {
           <div className="row justify-content-center">
             <div className="col-lg-6">
               <div className="section_title text-center pb-30 flex flex-col items-center justify-center">
-                <h3 className="title">Our Moments</h3>
+                <h3 className="title">Our Plans</h3>
               </div>
             </div>
           </div>
@@ -348,9 +341,25 @@ const LovelyCouple = () => {
                 <div className="event_image">
                   <img src={six6} alt="event" style={{}} />
                 </div>
-                <div className="event_content">
-                  <span className="date">14 feb at 08:00</span>
-                  <p>First We Met at Gurdwara</p>
+                <div className="event_content ">
+                  <span className="date">14 October</span>
+                  <h3 className="event_title">
+                    <p>We will go gurdware at 09:00 AM</p>
+                  </h3>
+                  <p className="font-[800]">Pehli Saal ki Khushiyan</p>
+                  <p>
+                    Mohabbat ke bagiche mein, ek phool khilta naya,Aaj hum
+                    manate hain, tumhari khushiyon ka jashn bhaya.Tumhara pehla
+                    birthday, meri jaan, ek pal hai pyaara,Har hansi aur
+                    muskurahat, tumhara roshni ka sahara.
+                  </p>
+                  <p>
+                    Subah se shaam tak, khushiyon se bhara rahe din,Har ek
+                    khwahish par ho, tumhare liye khuda ka ashirwad sin.Tumhare
+                    cake par har ek candle, ek sapna hai jo udan bharne ko
+                    tayaar,Is khoobsurat safar mein, main tumse aur pyaar
+                    karunga baar-baar.
+                  </p>
                 </div>
               </div>
             </div>
@@ -364,11 +373,23 @@ const LovelyCouple = () => {
                   <img src={five5} alt="event" />
                 </div>
                 <div className="event_content">
-                  <span className="date">05 Feb 2023</span>
-                  {/* <h3 className="event_title">
-                    <p>Monal Restaurent Lunch</p>
-                  </h3> */}
-                  <p>Monal Restaurent Lunch</p>
+                  <span className="date">14 October</span>
+                  <h3 className="event_title">
+                    <p>We will go for lunch 03:00 PM</p>
+                  </h3>
+                  <p className="font-[800]">Hamesha Tumhara</p>
+                  <p>
+                    Ek saal guzar gaya, aur kya anokha safar hai,Tumhare saath
+                    hoon, toh kuch bhi chhupana nahi hai.Tumhari hansi, tumhari
+                    shanti, jaise raat mein sitare,Tum mere dil ko bhare, meri
+                    roshni ka sahare.
+                  </p>
+                  <p className="pb-[50px]">
+                    Toh yeh hai tumhare liye, meri pyaar, is khaas din
+                    par,Tumhara dil khush rahe, chahe kuch bhi ho saath
+                    saath.Saath mein hum naachenge, waqt ke har pal ko,Is
+                    khoobsurat zindagi mein, mujhe khushi hai ki tum ho meri.
+                  </p>
                 </div>
               </div>
             </div>
@@ -405,7 +426,7 @@ const LovelyCouple = () => {
           <div className="footer_widget pt-80 pb-80 text-center">
             <div className="footer_title">
               <h3 className="title" style={{ color: "#c43451" }}>
-                Michael ❤️ Jessica
+                Vinendar ❤️ Sarika
               </h3>
             </div>
             <ul className="footer_menu">
@@ -417,9 +438,9 @@ const LovelyCouple = () => {
           </div>
           <div className="footer_copyright text-center">
             <p>
-              Designed and Developed by{" "}
-              <p style={{ color: "#D59A57" }} rel="nofollow">
-                M Ibrahim
+              From Your Only One{" "}
+              <p style={{ color: "#c43451", fontWeight: "700" }} rel="nofollow">
+                Vinendar Kumar
               </p>
             </p>
           </div>

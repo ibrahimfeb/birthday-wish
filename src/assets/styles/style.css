@@ -1582,9 +1582,10 @@ p {
   color: #747e88;
 }
 .single_event .event_content .event_title p {
-  font-size: 30px;
+  font-size: 16px;
   color: #38424d;
   margin-top: 20px;
+  font-weight: 800;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
