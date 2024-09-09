@@ -77,8 +77,11 @@ h4,
 h5,
 h6 {
   font-family: "Niconne", cursive;
+  /* font-family: Arial, Helvetica, sans-serif; */
   font-weight: 700;
-  color: #38424d;
+  color: #c43451;
+
+  /* color: #38424d; */
   margin: 0px;
 }
 
@@ -114,11 +117,12 @@ ol {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 26px;
   color: #747e88;
   margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .bg_cover {
