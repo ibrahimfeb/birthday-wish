@@ -341,7 +341,7 @@ const LovelyCouple = () => {
           <div className="row justify-content-center">
             <div className="col-lg-6">
               <div className="section_title text-center pb-30 flex flex-col items-center justify-center">
-                <h3 className="title">Our Plans</h3>
+                <h3 className="title">Some Words for your beauty</h3>
               </div>
             </div>
           </div>
@@ -356,10 +356,10 @@ const LovelyCouple = () => {
                   <img src={six6} alt="event" style={{}} />
                 </div>
                 <div className="event_content ">
-                  <span className="date">14 October</span>
-                  <h3 className="event_title">
+                  {/* <span className="date">14 October</span> */}
+                  {/* <h3 className="event_title">
                     <p>We will go gurdware at 09:00 AM</p>
-                  </h3>
+                  </h3> */}
                   <p className="font-[800]">Pehli Saal ki Khushiyan</p>
                   <p>
                     Mohabbat ke bagiche mein, ek phool khilta naya,Aaj hum
@@ -387,10 +387,10 @@ const LovelyCouple = () => {
                   <img src={five5} alt="event" />
                 </div>
                 <div className="event_content">
-                  <span className="date">14 October</span>
+                  {/* <span className="date">14 October</span>
                   <h3 className="event_title">
                     <p>We will go for lunch 03:00 PM</p>
-                  </h3>
+                  </h3> */}
                   <p className="font-[800]">Hamesha Tumhara</p>
                   <p>
                     Ek saal guzar gaya, aur kya anokha safar hai,Tumhare saath
@@ -414,11 +414,11 @@ const LovelyCouple = () => {
       <section id="gallery" className="gallery_area pt-80">
         <div className="container">
           <div className="text-center">
-            <h1 className="pb-[5px]">Have a bright future</h1>
-            <p className="text-[#D57282] mb-[20px]">
+            <h1 className="pb-[5px]">Our Plans</h1>
+            {/* <p className="text-[#D57282] mb-[20px]">
               Wishing you a lifetime of happiness and joy. I'm so grateful to
               have you in my life.
-            </p>
+            </p> */}
             <div className="w-full aspect-ratio-16:9">
               <iframe
                 src={lastclip}
