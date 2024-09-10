@@ -14,23 +14,37 @@ import wishSong from "../assets/clips/wishSong.mp4";
 import { useEffect, useRef } from "react";
 
 const LovelyCouple = () => {
-  const audioRef = useRef<HTMLAudioElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    const audio = audioRef.current;
-    if (audio) {
-      audio.play().catch((error) => {
-        console.error("Audio playback failed:", error);
-      });
-    }
+    const video = videoRef.current;
+
+    const playVideo = async () => {
+      if (video) {
+        try {
+          video.muted = true; // Mute initially
+          await video.play();
+          video.muted = false; // Unmute after playing
+          console.log("Video playback started successfully");
+        } catch (error) {
+          console.error("Video playback failed:", error);
+        }
+      }
+    };
+
+    playVideo();
   }, []);
   return (
     <>
-      <section id="gallery" className="gallery_area pt-0 h-[1vh] hidden">
+      <section
+        id="gallery"
+        className="gallery_area pt-0"
+        style={{ height: "1vh", opacity: 0 }}
+      >
         <div className="container">
           <div className="text-center">
-            <div className="w-full  flex justify-center">
-              <video src={wishSong} autoPlay loop />
+            <div className="w-full flex justify-center">
+              <video ref={videoRef} src={wishSong} autoPlay loop />
             </div>
           </div>
         </div>
