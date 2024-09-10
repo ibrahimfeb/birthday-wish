@@ -1555,6 +1555,12 @@ p {
   height: 67vh;
   
 }
+.single_event .our_plans{
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
 .single_event .event_image img {
   width: 100%;
   -webkit-transition: all 0.3s ease-out 0s;

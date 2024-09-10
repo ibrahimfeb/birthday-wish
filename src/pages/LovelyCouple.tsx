@@ -1,6 +1,8 @@
 import {
   eight8,
   five5,
+  loveOne,
+  loveThree,
   one1,
   seven7,
   shapeOne,
@@ -414,12 +416,63 @@ const LovelyCouple = () => {
       <section id="gallery" className="gallery_area pt-80">
         <div className="container">
           <div className="text-center">
-            <h1 className="pb-[5px]">Our Plans</h1>
             {/* <p className="text-[#D57282] mb-[20px]">
               Wishing you a lifetime of happiness and joy. I'm so grateful to
               have you in my life.
             </p> */}
-            <div className="w-full aspect-ratio-16:9">
+
+            {/* NEW SECTION */}
+            <section id="event" className="event_area pt-0 pb-0">
+              <div className="container">
+                <div className="row justify-content-center">
+                  <div className="col-lg-6">
+                    <div className="section_title text-center pb-30 flex flex-col items-center justify-center">
+                      <h3 className="title">Our Plans</h3>
+                    </div>
+                  </div>
+                </div>
+                <div className="row justify-content-center">
+                  <div className="col-lg-4 col-md-7">
+                    <div
+                      className="single_event mt-30 wow fadeIn"
+                      data-wow-duration="1.3s"
+                      data-wow-delay="0.2s"
+                    >
+                      <div className="our_plans">
+                        <img src={loveOne} alt="event" style={{}} />
+                      </div>
+                      <div className="event_content ">
+                        {/* <span className="date">14 October</span> */}
+                        {/* <h3 className="event_title">
+                    <p>We will go gurdware at 09:00 AM</p>
+                  </h3> */}
+                        <p className="font-[800]">Gurdwara</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-4 col-md-7">
+                    <div
+                      className="single_event mt-30 wow fadeIn"
+                      data-wow-duration="1.3s"
+                      data-wow-delay="0.5s"
+                    >
+                      <div className="our_plans">
+                        <img src={loveThree} alt="event" />
+                      </div>
+                      <div className="event_content">
+                        {/* <span className="date">14 October</span>
+                  <h3 className="event_title">
+                    <p>We will go for lunch 03:00 PM</p>
+                  </h3> */}
+                        <p className="font-[800]">Restuarent</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            {/* NEW SECTION */}
+            <div className="w-full aspect-ratio-16:9 mt-[20px]">
               <iframe
                 src={lastclip}
                 title="Video Clip"
