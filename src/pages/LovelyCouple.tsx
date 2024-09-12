@@ -1,9 +1,9 @@
 import {
   eight8,
   five5,
-  loveOne,
-  loveThree,
+  Gurdwara,
   one1,
+  Restuarent,
   seven7,
   shapeOne,
   shapeTwo,
@@ -64,8 +64,14 @@ const LovelyCouple = () => {
         <div className="container items-center  ">
           <div className="text-center">
             <h1 className="pb-[5px]">Happy Birthday!</h1>
-            <p style={{ color: "#D57282", textAlign: "center" }}>
-              On this special day, I want to take a moment to express just how
+            <p
+              style={{
+                color: "#D57282",
+                textAlign: "center",
+                textTransform: "capitalize",
+              }}
+            >
+              On This Special Day, I Want To Take a Moment To Express Just How
               much you mean to me. Happy birthday to the love of my life, my
               partner, my confidante, and my best friend! Each year, as we
               celebrate your birthday, I am reminded of how fortunate I am to
@@ -80,7 +86,6 @@ const LovelyCouple = () => {
           <img src={shapeTwo} alt="shape" className="mt-[70px]" />
         </div>
       </section>
-
 
       <section id="our_love" className="our_love_area pt-60">
         <div className="container">
@@ -98,8 +103,13 @@ const LovelyCouple = () => {
                 data-wow-duration="1.3s"
                 data-wow-delay="0.4s"
               >
-                <h3 className="love_title">From the moment we met</h3>
-                <p>
+                <h3
+                  className="love_title"
+                  style={{ textTransform: "capitalize" }}
+                >
+                  From the moment we met
+                </h3>
+                <p style={{ textTransform: "capitalize" }}>
                   I knew there was something extraordinary about you. Your
                   kindness, warmth, and beauty captivated me instantly. You have
                   a way of making every day brighter and every moment more
@@ -131,10 +141,13 @@ const LovelyCouple = () => {
                 data-wow-duration="1.3s"
                 data-wow-delay="0.4s"
               >
-                <h3 className="love_title">
+                <h3
+                  className="love_title"
+                  style={{ textTransform: "capitalize" }}
+                >
                   I am grateful for the love and support
                 </h3>
-                <p>
+                <p style={{ textTransform: "capitalize" }}>
                   You have been my rock during difficult times, always
                   encouraging me to pursue my dreams and reminding me of my
                   worth. Your belief in me has given me the courage to chase my
@@ -164,10 +177,13 @@ const LovelyCouple = () => {
                 data-wow-duration="1.3s"
                 data-wow-delay="0.4s"
               >
-                <h3 className="love_title">
+                <h3
+                  className="love_title"
+                  style={{ textTransform: "capitalize" }}
+                >
                   As we celebrate your birthday today
                 </h3>
-                <p>
+                <p style={{ textTransform: "capitalize" }}>
                   I want you to know how deeply I admire you. You are a
                   remarkable woman with so many talents and qualities that
                   inspire me every day. Your strength and resilience in the face
@@ -196,8 +212,13 @@ const LovelyCouple = () => {
                 data-wow-duration="1.3s"
                 data-wow-delay="0.4s"
               >
-                <h3 className="love_title">As we celebrate you today</h3>
-                <p>
+                <h3
+                  className="love_title"
+                  style={{ textTransform: "capitalize" }}
+                >
+                  As we celebrate you today
+                </h3>
+                <p style={{ textTransform: "capitalize" }}>
                   let’s also take a moment to reflect on the beautiful journey
                   we have shared together. The memories we have created, the
                   challenges we have overcome, and the love that has blossomed
@@ -226,8 +247,13 @@ const LovelyCouple = () => {
                 data-wow-duration="1.3s"
                 data-wow-delay="0.4s"
               >
-                <h3 className="love_title">Thank you for being you</h3>
-                <p>
+                <h3
+                  className="love_title"
+                  style={{ textTransform: "capitalize" }}
+                >
+                  Thank you for being you
+                </h3>
+                <p style={{ textTransform: "capitalize" }}>
                   for being the incredible woman that you are. Thank you for
                   your love, your patience, and your unwavering support. I am so
                   proud to call you my wife, and I promise to cherish you every
@@ -257,12 +283,44 @@ const LovelyCouple = () => {
         </div>
       </section>
 
-      <section id="event" className="event_area pt-80 pb-0">
+      <section
+        id="coming_soon"
+        className="coming_soon_area py-16 "
+        style={{ backgroundColor: "transparent" }}
+      >
+        {/* <div className="coming_soon_shape_1">
+          <img src={shapeOne} alt="shape" />
+        </div> */}
+
+        <div className="container items-center  ">
+          <div className="text-center">
+            <h1 className="pb-[5px]">Once Again</h1>
+            <p
+              style={{
+                color: "#D57282",
+                textAlign: "center",
+                textTransform: "capitalize",
+              }}
+            >
+              Happy Birthday, My Love! Here’s To You, May This Year Be Your Best
+              One Yet! With All My Love,
+            </p>
+          </div>
+        </div>
+
+        {/* <div className="coming_soon_shape_2">
+          <img src={shapeTwo} alt="shape" className="mt-[70px]" />
+        </div> */}
+      </section>
+
+      <section id="event" className="event_area pt-10 pb-0">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-6">
               <div className="section_title text-center pb-30 flex flex-col items-center justify-center">
-                <h3 className="title">Some Words for your beauty</h3>
+                <h3 className="title" style={{ textTransform: "capitalize" }}>
+                  Some Words for your beauty
+                </h3>
               </div>
             </div>
           </div>
@@ -281,19 +339,24 @@ const LovelyCouple = () => {
                   {/* <h3 className="event_title">
                     <p>We will go gurdware at 09:00 AM</p>
                   </h3> */}
-                  <p className="font-[800]">Pehli Saal ki Khushiyan</p>
-                  <p>
-                    Mohabbat ke bagiche mein, ek phool khilta naya,Aaj hum
-                    manate hain, tumhari khushiyon ka jashn bhaya.Tumhara pehla
-                    birthday, meri jaan, ek pal hai pyaara,Har hansi aur
-                    muskurahat, tumhara roshni ka sahara.
+                  <p
+                    className="font-[800]"
+                    style={{ textTransform: "capitalize" }}
+                  >
+                    Pehli Saal ki Khushiyan
                   </p>
-                  <p>
-                    Subah se shaam tak, khushiyon se bhara rahe din,Har ek
-                    khwahish par ho, tumhare liye khuda ka ashirwad sin.Tumhare
-                    cake par har ek candle, ek sapna hai jo udan bharne ko
-                    tayaar,Is khoobsurat safar mein, main tumse aur pyaar
-                    karunga baar-baar.
+                  <p style={{ textTransform: "capitalize" }}>
+                    Mohabbat Ke Bagiche Mein, Ek Phool Khilta Naya,Aaj Hum
+                    Manate Hain, Tumhari Khushiyon Ka Jashn Bhaya.Tumhara Pehla
+                    Birthday,Meri Jaan, Ek Pal Hai Pyaara,Har Hansi Aur
+                    Muskurahat, Tumhara Roshni Ka Sahara.
+                  </p>
+                  <p style={{ textTransform: "capitalize" }}>
+                    Subah Se Shaam Tak, Khushiyon Se Bhara Rahe Din,Har Ek
+                    Khwahish Par Ho, Tumhare Liye Khuda Ka Ashirwad Sin.Tumhare
+                    Cake Par Har Ek Candle, Ek Sapna Hai Jo Udan Bharne Ko
+                    Tayaar,Is Khoobsurat Safar Mein, Main Tumse Aur Pyaar
+                    Karunga Baar-Baar.
                   </p>
                 </div>
               </div>
@@ -313,17 +376,21 @@ const LovelyCouple = () => {
                     <p>We will go for lunch 03:00 PM</p>
                   </h3> */}
                   <p className="font-[800]">Hamesha Tumhara</p>
-                  <p>
-                    Ek saal guzar gaya, aur kya anokha safar hai,Tumhare saath
-                    hoon, toh kuch bhi chhupana nahi hai.Tumhari hansi, tumhari
-                    shanti, jaise raat mein sitare,Tum mere dil ko bhare, meri
-                    roshni ka sahare.
+                  <p style={{ textTransform: "capitalize" }}>
+                    Tumhari Khubsoorti Sirf Tumhare Chehre Tak Nahi Hai, Balki
+                    Har Andaaz Mein Basi Hai. Tumhari Aankhon Mein Ek Gehra
+                    Samandar Hai, Jismein Ek Pal Ke Liye Dekhna Hi Kaafi Hai Ki
+                    Duniya Kitni Khoobsurat Hai.
                   </p>
-                  <p className="pb-[50px]">
-                    Toh yeh hai tumhare liye, meri pyaar, is khaas din
-                    par,Tumhara dil khush rahe, chahe kuch bhi ho saath
-                    saath.Saath mein hum naachenge, waqt ke har pal ko,Is
-                    khoobsurat zindagi mein, mujhe khushi hai ki tum ho meri.
+                  <p
+                    className="pb-[0px] "
+                    style={{ textTransform: "capitalize" }}
+                  >
+                    Tumhari Muskurahat Jaise Phoolon Par Se Boondein Tapakti
+                    Hain, Ek Narmi, Ek Sukoon Jo Sirf Tumhari Haazri Mein
+                    Mehsoos Hoti Hai. Tumhara Wajood Meri Zindagi Ko Ek Naya
+                    Rang De Deta Hai, Jahan Tumhara Har Lafz, Tumhari Har
+                    Muskaan Mere Liye Ik Naya Din Hai.
                   </p>
                 </div>
               </div>
@@ -358,7 +425,12 @@ const LovelyCouple = () => {
                       data-wow-delay="0.2s"
                     >
                       <div className="our_plans">
-                        <img src={loveOne} alt="event" style={{}} />
+                        <img
+                          src={Gurdwara}
+                          alt="event"
+                          style={{}}
+                          className="w-[50vw] h-[50vh]"
+                        />
                       </div>
                       <div className="event_content ">
                         {/* <span className="date">14 October</span> */}
@@ -376,14 +448,18 @@ const LovelyCouple = () => {
                       data-wow-delay="0.5s"
                     >
                       <div className="our_plans">
-                        <img src={loveThree} alt="event" />
+                        <img
+                          src={Restuarent}
+                          alt="event"
+                          className="w-[50vw] h-[50vh]"
+                        />
                       </div>
                       <div className="event_content">
                         {/* <span className="date">14 October</span>
                   <h3 className="event_title">
                     <p>We will go for lunch 03:00 PM</p>
                   </h3> */}
-                        <p className="font-[800]">Restuarent</p>
+                        <p className="font-[800]">Restaurent</p>
                       </div>
                     </div>
                   </div>

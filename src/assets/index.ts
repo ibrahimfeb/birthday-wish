@@ -19,3 +19,5 @@ export { default as eight8 } from "../assets/images/8.jpg";
 export { default as nine9 } from "../assets/images/9.jpg";
 export { default as ten10 } from "../assets/images/10.jpg";
 export { default as beach } from "../assets/images/beach.jpg";
+export { default as Gurdwara } from "../assets/images/Gurdwara.jpg";
+export { default as Restuarent } from "../assets/images/Restuarent.jpg";
