@@ -26,8 +26,14 @@ const LovelyCouple = () => {
         try {
           video.muted = true; // Mute initially
           await video.play();
-          video.muted = false; // Unmute after playing
           console.log("Video playback started successfully");
+
+          const unmuteOnHover = () => {
+            video.muted = false;
+            document.removeEventListener('mouseover', unmuteOnHover);
+          };
+
+          document.addEventListener('mouseover', unmuteOnHover);
         } catch (error) {
           console.error("Video playback failed:", error);
         }
@@ -35,6 +41,10 @@ const LovelyCouple = () => {
     };
 
     playVideo();
+
+    return () => {
+      document.removeEventListener('mouseover', playVideo);
+    };
   }, []);
   return (
     <>
@@ -46,7 +56,14 @@ const LovelyCouple = () => {
         <div className="container">
           <div className="text-center">
             <div className="w-full flex justify-center">
-              <video ref={videoRef} src={wishSong} autoPlay loop />
+              <video
+                ref={videoRef}
+                src={wishSong}
+                autoPlay
+                loop
+                muted
+                playsInline
+              />
             </div>
           </div>
         </div>
@@ -73,11 +90,10 @@ const LovelyCouple = () => {
             >
               On This Special Day, I Want To Take a Moment To Express Just How
               much you mean to me. Happy birthday to the love of my life, my
-              partner, my confidante, and my best friend! as we
-              celebrate your birthday, I am reminded of how fortunate I am to
-              have you by my side. You are not just my wife; you are the light
-              of my life, the reason behind my smile, and the source of my
-              happiness.
+              partner, my confidante, and my best friend! as we celebrate your
+              birthday, I am reminded of how fortunate I am to have you by my
+              side. You are not just my wife; you are the light of my life, the
+              reason behind my smile, and the source of my happiness.
             </p>
           </div>
         </div>
@@ -376,7 +392,10 @@ const LovelyCouple = () => {
                     <p>We will go for lunch 03:00 PM</p>
                   </h3> */}
                   {/* <p className="font-[800]">Hamesha Tumhara</p> */}
-                  <p style={{ textTransform: "capitalize" }} className="pb-[90px]">
+                  <p
+                    style={{ textTransform: "capitalize" }}
+                    className="pb-[90px]"
+                  >
                     Tumhari Khoobsurti Ek Ehsaas Hai, Jo Har Pal Nayi Chamak Ke
                     Saath Roshni Karti Hai. Tumhare Lambe Baalon Ki Lehraahat
                     Jaise Hawaaon Mein Khilta Ek Phool, Aur Tumhari Aankhon Ki
@@ -503,10 +522,13 @@ const LovelyCouple = () => {
           </div>
           <div className="footer_copyright text-center">
             <p>
-              From Your Only One{" "}
-              <p style={{ color: "#c43451", fontWeight: "700" }} rel="nofollow">
+              From Your Only One <br />
+              <span
+                style={{ color: "#c43451", fontWeight: "500" }}
+                rel="nofollow"
+              >
                 Vinendar Kumar
-              </p>
+              </span>
             </p>
           </div>
         </div>
