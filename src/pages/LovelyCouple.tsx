@@ -346,17 +346,17 @@ const LovelyCouple = () => {
                     Pehli Saal ki Khushiyan
                   </p>
                   <p style={{ textTransform: "capitalize" }}>
-                    Mohabbat Ke Bagiche Mein, Ek Phool Khilta Naya,Aaj Hum
-                    Manate Hain, Tumhari Khushiyon Ka Jashn Bhaya.Tumhara Pehla
-                    Birthday,Meri Jaan, Ek Pal Hai Pyaara,Har Hansi Aur
+                    Mohabbat Ke Bagiche Mein, Ek Phool Khilta Naya, Aaj Hum
+                    Manate Hain, Tumhari Khushiyon Ka Jashn Naya. Tumhara Pehla
+                    Birthday, Meri Jaan, Ek Pal Hai Pyaara, Har Hansi Aur
                     Muskurahat, Tumhara Roshni Ka Sahara.
                   </p>
                   <p style={{ textTransform: "capitalize" }}>
-                    Subah Se Shaam Tak, Khushiyon Se Bhara Rahe Din,Har Ek
-                    Khwahish Par Ho, Tumhare Liye Khuda Ka Ashirwad Sin.Tumhare
+                    Subah Se Shaam Tak, Khushiyon Se Bhara Rahe Din, Har Ek
+                    Khwahish Par Ho, Tumhare Liye Khuda Ka Ashirwad. Tumhare
                     Cake Par Har Ek Candle, Ek Sapna Hai Jo Udan Bharne Ko
-                    Tayaar,Is Khoobsurat Safar Mein, Main Tumse Aur Pyaar
-                    Karunga Baar-Baar.
+                    Tayaar, Is Khoobsurat Safar Mein, Main Tumse Aur Pyaar
+                    Karunga Baar Baar.
                   </p>
                 </div>
               </div>
@@ -376,13 +376,16 @@ const LovelyCouple = () => {
                     <p>We will go for lunch 03:00 PM</p>
                   </h3> */}
                   <p className="font-[800]">Hamesha Tumhara</p>
-                  <p style={{ textTransform: "capitalize" }}>
-                    Tumhari Khubsoorti Sirf Tumhare Chehre Tak Nahi Hai, Balki
-                    Har Andaaz Mein Basi Hai. Tumhari Aankhon Mein Ek Gehra
-                    Samandar Hai, Jismein Ek Pal Ke Liye Dekhna Hi Kaafi Hai Ki
-                    Duniya Kitni Khoobsurat Hai.
+                  <p style={{ textTransform: "capitalize" }} className="pb-[90px]">
+                    Tumhari Khoobsurti Ek Ehsaas Hai, Jo Har Pal Nayi Chamak Ke
+                    Saath Roshni Karti Hai. Tumhare Lambe Baalon Ki Lehraahat
+                    Jaise Hawaaon Mein Khilta Ek Phool, Aur Tumhari Aankhon Ki
+                    Gehraayi Mein Ek Puri Kahani Chupi Hai. Tumhari Saadi
+                    Khoobsurti Mein Ek Shaan Hai Jo Har Pal Dil Ko Apni Taraf
+                    Kheench Leti Hai. Jo Nazar Tumpar Tik Jaaye, Woh Bas Kho
+                    Jaati Hai Tumhari Hansi Ki NarmiMe
                   </p>
-                  <p
+                  {/* <p
                     className="pb-[0px] "
                     style={{ textTransform: "capitalize" }}
                   >
@@ -391,7 +394,7 @@ const LovelyCouple = () => {
                     Mehsoos Hoti Hai. Tumhara Wajood Meri Zindagi Ko Ek Naya
                     Rang De Deta Hai, Jahan Tumhara Har Lafz, Tumhari Har
                     Muskaan Mere Liye Ik Naya Din Hai.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
