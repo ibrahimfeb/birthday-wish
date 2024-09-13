@@ -73,7 +73,7 @@ const LovelyCouple = () => {
             >
               On This Special Day, I Want To Take a Moment To Express Just How
               much you mean to me. Happy birthday to the love of my life, my
-              partner, my confidante, and my best friend! Each year, as we
+              partner, my confidante, and my best friend! as we
               celebrate your birthday, I am reminded of how fortunate I am to
               have you by my side. You are not just my wife; you are the light
               of my life, the reason behind my smile, and the source of my
@@ -339,12 +339,12 @@ const LovelyCouple = () => {
                   {/* <h3 className="event_title">
                     <p>We will go gurdware at 09:00 AM</p>
                   </h3> */}
-                  <p
+                  {/* <p
                     className="font-[800]"
                     style={{ textTransform: "capitalize" }}
                   >
                     Pehli Saal ki Khushiyan
-                  </p>
+                  </p> */}
                   <p style={{ textTransform: "capitalize" }}>
                     Mohabbat Ke Bagiche Mein, Ek Phool Khilta Naya, Aaj Hum
                     Manate Hain, Tumhari Khushiyon Ka Jashn Naya. Tumhara Pehla
@@ -375,7 +375,7 @@ const LovelyCouple = () => {
                   <h3 className="event_title">
                     <p>We will go for lunch 03:00 PM</p>
                   </h3> */}
-                  <p className="font-[800]">Hamesha Tumhara</p>
+                  {/* <p className="font-[800]">Hamesha Tumhara</p> */}
                   <p style={{ textTransform: "capitalize" }} className="pb-[90px]">
                     Tumhari Khoobsurti Ek Ehsaas Hai, Jo Har Pal Nayi Chamak Ke
                     Saath Roshni Karti Hai. Tumhare Lambe Baalon Ki Lehraahat
