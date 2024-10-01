@@ -11,41 +11,30 @@ import {
   ten10,
   three3,
 } from "../assets";
-import lastclip from "../assets/clips/lastclip.mp4";
 import wishSong from "../assets/clips/wishSong.mp4";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 const LovelyCouple = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  useEffect(() => {
-    const video = videoRef.current;
+  // useEffect(() => {
+  //   const video = videoRef.current;
 
-    const playVideo = async () => {
-      if (video) {
-        try {
-          video.muted = true; // Mute initially
-          await video.play();
-          console.log("Video playback started successfully");
+  //   const playVideo = async () => {
+  //     if (video) {
+  //       try {
+  //         video.muted = true;
+  //         await video.play();
+  //         video.muted = false;
+  //         console.log("Video playback started successfully");
+  //       } catch (error) {
+  //         console.error("Video playback failed:", error);
+  //       }
+  //     }
+  //   };
 
-          const unmuteOnHover = () => {
-            video.muted = false;
-            document.removeEventListener('mouseover', unmuteOnHover);
-          };
-
-          document.addEventListener('mouseover', unmuteOnHover);
-        } catch (error) {
-          console.error("Video playback failed:", error);
-        }
-      }
-    };
-
-    playVideo();
-
-    return () => {
-      document.removeEventListener('mouseover', playVideo);
-    };
-  }, []);
+  //   playVideo();
+  // }, []);
   return (
     <>
       <section
@@ -56,14 +45,7 @@ const LovelyCouple = () => {
         <div className="container">
           <div className="text-center">
             <div className="w-full flex justify-center">
-              <video
-                ref={videoRef}
-                src={wishSong}
-                autoPlay
-                loop
-                muted
-                playsInline
-              />
+              <video ref={videoRef} src={wishSong} autoPlay loop playsInline />
             </div>
           </div>
         </div>
@@ -455,11 +437,10 @@ const LovelyCouple = () => {
                         />
                       </div>
                       <div className="event_content ">
-                        {/* <span className="date">14 October</span> */}
-                        {/* <h3 className="event_title">
-                    <p>We will go gurdware at 09:00 AM</p>
-                  </h3> */}
-                        <p className="font-[800]">Gurdwara</p>
+                        <h3 className="event_title">
+                          <p>Gurdwara</p>
+                        </h3>
+                        <p className="font-[600] text-[12px]">We will go on 14 October at 10:00 AM</p>
                       </div>
                     </div>
                   </div>
@@ -477,11 +458,10 @@ const LovelyCouple = () => {
                         />
                       </div>
                       <div className="event_content">
-                        {/* <span className="date">14 October</span>
-                  <h3 className="event_title">
-                    <p>We will go for lunch 03:00 PM</p>
-                  </h3> */}
-                        <p className="font-[800]">Restaurent</p>
+                      <h3 className="event_title">
+                          <p>Engima Restaurant</p>
+                        </h3>
+                        <p className="font-[600] text-[12px]">We will go for lunch on 14 October at 02:30 PM</p>
                       </div>
                     </div>
                   </div>
@@ -489,14 +469,14 @@ const LovelyCouple = () => {
               </div>
             </section>
             {/* NEW SECTION */}
-            <div className="w-full aspect-ratio-16:9 mt-[20px]">
+            {/* <div className="w-full aspect-ratio-16:9 mt-[20px]">
               <iframe
                 src={lastclip}
                 title="Video Clip"
                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 className="w-full h-full"
               ></iframe>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -510,7 +490,7 @@ const LovelyCouple = () => {
           <div className="footer_widget pt-80 pb-80 text-center">
             <div className="footer_title">
               <h3 className="title" style={{ color: "#c43451" }}>
-                Vinendar ❤️ Sarika
+              Sarika Vinuu ❤️ 
               </h3>
             </div>
             <ul className="footer_menu">
@@ -520,7 +500,7 @@ const LovelyCouple = () => {
               <li>❤️</li>
             </ul>
           </div>
-          <div className="footer_copyright text-center">
+          {/* <div className="footer_copyright text-center">
             <p>
               From Your Only One <br />
               <span
@@ -530,7 +510,7 @@ const LovelyCouple = () => {
                 Vinendar Kumar
               </span>
             </p>
-          </div>
+          </div> */}
         </div>
       </footer>
     </>
