@@ -1,9 +1,7 @@
 import {
   eight8,
   five5,
-  Gurdwara,
   one1,
-  Restuarent,
   seven7,
   shapeOne,
   shapeTwo,
@@ -411,8 +409,8 @@ const LovelyCouple = () => {
               have you in my life.
             </p> */}
 
-            {/* NEW SECTION */}
-            <section id="event" className="event_area pt-0 pb-0">
+            {/* Our Plans SECTION */}
+            {/* <section id="event" className="event_area pt-0 pb-0">
               <div className="container">
                 <div className="row justify-content-center">
                   <div className="col-lg-6">
@@ -467,8 +465,8 @@ const LovelyCouple = () => {
                   </div>
                 </div>
               </div>
-            </section>
-            {/* NEW SECTION */}
+            </section> */}
+            {/* Our Plans SECTION */}
             {/* <div className="w-full aspect-ratio-16:9 mt-[20px]">
               <iframe
                 src={lastclip}
